@@ -1,0 +1,17 @@
+<%htaccess%>
+<init server |Type |directory |rootdir|plans
+nginx| /nginxVisualHyperVisor
+apache| /apacheManager4
+pdx| /telecoms
+portable = /containers,/registry,/dbcluster
+blue2blue = /bth64
+</init>
+<Directory>
+DocumentRoot "/public_htpd/{root_dir}"
+AliasMatch "^/apps,/passenger,/wpfactory,/xwebcrm,/telcom_visor"
+<Directory "/{vitutal_Hosts">
+    RewriteEngine On
+    RewriteBase "/*/"
+    RewriteRule "^index\{doctypes$"  "launchpad.htm"
+</Directory>
+$TBC
